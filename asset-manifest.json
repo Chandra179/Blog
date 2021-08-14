@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Blog/static/css/main.be6fe132.chunk.css",
+    "main.js": "/Blog/static/js/main.6dc103a6.chunk.js",
+    "main.js.map": "/Blog/static/js/main.6dc103a6.chunk.js.map",
+    "runtime-main.js": "/Blog/static/js/runtime-main.66f0ca9a.js",
+    "runtime-main.js.map": "/Blog/static/js/runtime-main.66f0ca9a.js.map",
+    "static/js/2.42f70efd.chunk.js": "/Blog/static/js/2.42f70efd.chunk.js",
+    "static/js/2.42f70efd.chunk.js.map": "/Blog/static/js/2.42f70efd.chunk.js.map",
+    "static/js/3.dd4c653c.chunk.js": "/Blog/static/js/3.dd4c653c.chunk.js",
+    "static/js/3.dd4c653c.chunk.js.map": "/Blog/static/js/3.dd4c653c.chunk.js.map",
+    "index.html": "/Blog/index.html",
+    "static/css/main.be6fe132.chunk.css.map": "/Blog/static/css/main.be6fe132.chunk.css.map",
+    "static/js/2.42f70efd.chunk.js.LICENSE.txt": "/Blog/static/js/2.42f70efd.chunk.js.LICENSE.txt",
+    "static/media/luffy.4050e878.jpg": "/Blog/static/media/luffy.4050e878.jpg",
+    "static/media/plant.b4fa677a.jpeg": "/Blog/static/media/plant.b4fa677a.jpeg",
+    "static/media/skull.1acc1aab.jpg": "/Blog/static/media/skull.1acc1aab.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66f0ca9a.js",
+    "static/js/2.42f70efd.chunk.js",
+    "static/css/main.be6fe132.chunk.css",
+    "static/js/main.6dc103a6.chunk.js"
+  ]
+}
