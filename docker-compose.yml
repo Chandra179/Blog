@@ -1,0 +1,14 @@
+services:
+  web:
+    # The build key allows us tell docker-compose where to find the build 
+    # instructions as well as the files and/or folders used during the build process.
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/src
+    command: npm run dev
+    ports:
+      - "8000:8000"
+    environment:
+      NODE_ENV: development
