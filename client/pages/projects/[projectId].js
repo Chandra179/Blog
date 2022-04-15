@@ -12,7 +12,8 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const characters = [{ name: "chan" }, { name: "bob" }];
+  // path name type must string
+  const characters = [{ name: "1" }, { name: "2" }];
   return {
     paths: characters.map((character) => {
       const projectId = character.name;
