@@ -2,7 +2,6 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { InferGetStaticPropsType } from 'next'
 
 export default function Project({ card }: InferGetStaticPropsType<typeof getStaticProps>) {
-  console.log(card);
   return <div>{card}</div>;
 }
 

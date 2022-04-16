@@ -6,16 +6,7 @@ import Link from 'next/link'
 import { GetStaticProps } from "next";
 import { InferGetStaticPropsType } from 'next'
 
-export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = [1, 2, 3, 4, 5]
-  return {
-    props: {
-      allPostsData
-    }
-  }
-};
-
-const Home: NextPage = ({ allPostsData }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home: NextPage = ({allPostsData}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Container maxWidth="md">
       <Head>
@@ -36,6 +27,15 @@ const Home: NextPage = ({ allPostsData }: InferGetStaticPropsType<typeof getStat
       </Box>
     </Container>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const allPostsData = [1, 2, 3, 4, 5]
+  return {
+    props: {
+      allPostsData
+    }
+  }
 };
 
 export default Home;
