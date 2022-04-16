@@ -11,7 +11,6 @@ export default function MyHeader() {
           width: 180,
           borderRadius: "50%",
         }}
-        alt="The house from the offer."
         src="luffy.jpg"
       />
       <Box mt={1}>

@@ -1,31 +1,21 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  FormGroup,
-  FormControlLabel,
-  Switch,
-} from "@mui/material";
+import { Box, Button, FormControlLabel, Switch } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 type Props = {
   isDarkTheme: boolean;
-  changeTheme: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  changeTheme: React.MouseEventHandler<HTMLButtonElement> | undefined;
 };
 
 const ThemeToggle: React.FC<Props> = ({ isDarkTheme, changeTheme }) => {
   return (
-    <Card>
-      <CardHeader
-        action={
-          <FormGroup>
-            <FormControlLabel
-              control={<Switch checked={isDarkTheme} onChange={changeTheme} />}
-              label="Dark Theme"
-            />
-          </FormGroup>
-        }
-      />
-    </Card>
+    <Box display="flex" justifyContent="flex-end">
+      <IconButton onClick={changeTheme}>
+        {isDarkTheme ? <Brightness7Icon /> : <Brightness4Icon />}
+      </IconButton>
+    </Box>
   );
 };
 
