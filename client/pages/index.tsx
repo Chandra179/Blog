@@ -3,27 +3,15 @@ import { useState } from "react";
 import MyHeader from "../components/MyHeader";
 import Layout from "../components/Layout";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { CssBaseline, Container, PaletteMode } from "@mui/material";
+import { CssBaseline, Container } from "@mui/material";
 import ThemeToggle from "../components/ThemeToggle";
-
-// Define theme settings
-const light = {
-  palette: {
-    mode: "light" as PaletteMode,
-  },
-};
-
-const dark = {
-  palette: {
-    mode: "dark" as PaletteMode,
-  },
-};
+import MySkills from "../components/MySkills/MySkills";
+import { dark, light } from "../constant/theme";
 
 const Home: NextPage = () => {
   // The light theme is used by default
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  // This function is triggered when the Switch component is toggled
   const changeTheme = () => {
     setIsDarkTheme(!isDarkTheme);
   };
@@ -33,8 +21,9 @@ const Home: NextPage = () => {
       <CssBaseline />
       <Container maxWidth="md" sx={{ boxShadow: 1 }}>
         <ThemeToggle isDarkTheme={isDarkTheme} changeTheme={changeTheme} />
+        <MyHeader />
         <Layout>
-          <MyHeader />
+          <MySkills />
         </Layout>
       </Container>
     </ThemeProvider>

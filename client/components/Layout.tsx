@@ -5,11 +5,9 @@ export default function Layout({ children }: any) {
   return (
     <Box
       display="flex"
-      justifyContent="center"
-      alignItems="center"
-      textAlign="center"
+      justifyContent="flex-start"
+      alignItems="flex-start"
       flexDirection="column"
-      pt={3}
     >
         {children}
     </Box>

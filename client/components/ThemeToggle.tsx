@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, FormControlLabel, Switch } from "@mui/material";
+import { Box } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
@@ -11,7 +11,7 @@ type Props = {
 
 const ThemeToggle: React.FC<Props> = ({ isDarkTheme, changeTheme }) => {
   return (
-    <Box display="flex" justifyContent="flex-end">
+    <Box display="flex" justifyContent="flex-end" pt={1}>
       <IconButton onClick={changeTheme}>
         {isDarkTheme ? <Brightness7Icon /> : <Brightness4Icon />}
       </IconButton>
