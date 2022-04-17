@@ -8,6 +8,7 @@ import ThemeToggle from "../components/ThemeToggle";
 import MySkills from "../components/MySkills";
 import { dark, light } from "../constant/theme";
 import ProjectList from "../components/ProjectList";
+import MyExperience from "../components/MyExperience";
 
 const Home: NextPage = () => {
   // The light theme is used by default
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
         <MyHeader />
         <Layout>
           <MySkills />
+          <MyExperience />
           <ProjectList />
         </Layout>
       </Container>

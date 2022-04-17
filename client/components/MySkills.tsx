@@ -6,9 +6,9 @@ export default function MySkills() {
   return (
     <Box mt={5} display="flex" flexDirection="column">
       <Typography letterSpacing={1} fontSize={16} fontWeight={800}>
-        SKILLS
+        MY SKILLS
       </Typography>
-      <Grid container mt={2}>
+      <Grid container mt={3}>
         {iconList.map((item, i) => {
           return (
             <Grid item lg={1} md={1} sm={1} xs={2} key={i}>
