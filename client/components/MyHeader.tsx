@@ -24,7 +24,9 @@ export default function MyHeader() {
           CHANDRA
         </Typography>
         <Typography fontSize={12} sx={{ color: "#a6a6a6" }}>
-          Web Developer | Analyst | INTJ
+          Fresh graduate<span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
+          Web Developer
+          <span>&nbsp;&nbsp;</span> |<span>&nbsp;&nbsp;</span> INTJ
         </Typography>
         <Box maxWidth={450}>
           <Typography mt={1} fontSize={15}>
