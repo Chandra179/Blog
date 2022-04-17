@@ -4,16 +4,16 @@ import iconList from "../constant/iconList.json";
 
 export default function MySkills() {
   return (
-    <Box mt={4} display="flex" flexDirection="column">
-      <Typography fontSize={20} fontWeight={600}>
-        My Skills
+    <Box mt={5} display="flex" flexDirection="column">
+      <Typography letterSpacing={1} fontSize={16} fontWeight={600}>
+        SKILLS
       </Typography>
       <Grid container mt={1}>
         {iconList.map((item, i) => {
           return (
             <Grid item lg={1} md={1} sm={1} xs={2} key={i}>
               <Box
-                m={1}
+                mr={3}
                 component="img"
                 sx={{
                   height: 40,

@@ -7,6 +7,7 @@ import { CssBaseline, Container } from "@mui/material";
 import ThemeToggle from "../components/ThemeToggle";
 import MySkills from "../components/MySkills";
 import { dark, light } from "../constant/theme";
+import ProjectList from "../components/ProjectList";
 
 const Home: NextPage = () => {
   // The light theme is used by default
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
         <MyHeader />
         <Layout>
           <MySkills />
+          <ProjectList />
         </Layout>
       </Container>
     </ThemeProvider>
