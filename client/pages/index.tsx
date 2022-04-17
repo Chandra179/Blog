@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline, Container } from "@mui/material";
 import ThemeToggle from "../components/ThemeToggle";
-import MySkills from "../components/MySkills/MySkills";
+import MySkills from "../components/MySkills";
 import { dark, light } from "../constant/theme";
 
 const Home: NextPage = () => {
