@@ -1,14 +1,15 @@
 import React from "react";
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Divider } from "@mui/material";
 import iconList from "../constant/iconList.json";
 
 export default function MySkills() {
   return (
     <Box mt={4} display="flex" flexDirection="column">
-      <Typography letterSpacing={1} fontSize={16} fontWeight={800}>
+      <Typography letterSpacing={1} fontSize={19} fontWeight={800}>
         SKILLS
       </Typography>
-      <Grid container mt={1}>
+      <Divider sx={{ marginTop: 1, marginBottom: 2 }} />
+      <Grid container>
         {iconList.map((item, i) => {
           return (
             <Grid item lg={1} md={1} sm={1} xs={2} key={i}>

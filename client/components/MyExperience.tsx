@@ -9,9 +9,10 @@ import myExperience from "../constant/myExperience.json";
 export default function MyExperience() {
   return (
     <Box mt={4}>
-      <Typography letterSpacing={1} fontSize={16} fontWeight={800}>
+      <Typography letterSpacing={1} fontSize={18} fontWeight={800}>
         EXPERIENCE
       </Typography>
+      <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
       <Grid
         container
         justifyContent="space-between"
@@ -69,16 +70,15 @@ export default function MyExperience() {
                         >
                           {item.date}
                         </Typography>
-                        <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
                       </Box>
                       {item.work.map(function (item, i) {
                         return (
                           <Typography
                             fontSize={14}
                             key={i}
-                            sx={{ marginBottom: 1 }}
+                            sx={{ marginBottom: 0.7 }}
                           >
-                            • {item}
+                            {item}
                           </Typography>
                         );
                       })}
