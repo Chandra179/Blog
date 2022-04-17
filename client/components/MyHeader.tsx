@@ -27,7 +27,7 @@ export default function MyHeader() {
           Web Developer | Analyst | INTJ
         </Typography>
         <Box maxWidth={450}>
-          <Typography mt={1} fontSize={14}>
+          <Typography mt={1} fontSize={15}>
             Always learn new things, creative person, innovative ideas,
             imaginative, flexible and hard working, though can be lazy
             sometimes.

@@ -5,10 +5,10 @@ import iconList from "../constant/iconList.json";
 export default function MySkills() {
   return (
     <Box mt={5} display="flex" flexDirection="column">
-      <Typography letterSpacing={1} fontSize={16} fontWeight={600}>
+      <Typography letterSpacing={1} fontSize={16} fontWeight={800}>
         SKILLS
       </Typography>
-      <Grid container mt={1}>
+      <Grid container mt={2}>
         {iconList.map((item, i) => {
           return (
             <Grid item lg={1} md={1} sm={1} xs={2} key={i}>

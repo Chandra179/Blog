@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 export default function ProjectList() {
   return (
     <Box mt={3}>
-      <Typography letterSpacing={1} fontSize={16} fontWeight={600}>
+      <Typography letterSpacing={1} fontSize={16} fontWeight={800}>
         PROJECT
       </Typography>
     </Box>
