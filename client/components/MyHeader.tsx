@@ -1,6 +1,14 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
+const tags = [
+  "Fresh graduate",
+  "Web Developer",
+  "Computer science",
+  "Universitas Multimedia Nusantara",
+  "INTJ",
+];
+
 export default function MyHeader() {
   return (
     <Box
@@ -20,25 +28,23 @@ export default function MyHeader() {
         }}
         src="luffy.jpg"
       />
-      <Box mt={1}>
-        <Typography
-          letterSpacing={2}
-          fontWeight={600}
-          fontSize={28}
-        >
+      <Box mt={1} display="flex" alignItems="center" flexDirection="column">
+        <Typography letterSpacing={2} fontWeight={600} fontSize={28}>
           CHANDRA
         </Typography>
-        <Typography fontSize={12} color="primary.light">
-          Fresh graduate
-          <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
-          Web Developer
-          <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span> 
-          Computer science
-          <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span> 
-          Universitas Multimedia Nusantara
-          <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span> 
-          INTJ
-        </Typography>
+        <Box display="flex" flexDirection="row">
+          <Typography fontSize={12} color="primary.light">
+            Fresh graduate
+            <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
+            Web Developer
+            <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
+            Computer science
+            <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
+            Universitas Multimedia Nusantara
+            <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
+            INTJ
+          </Typography>
+        </Box>
         <Box maxWidth={450}>
           <Typography mt={1} fontSize={15} color="text.secondary">
             Always learn new things, creative person, innovative ideas,

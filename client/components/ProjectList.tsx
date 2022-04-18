@@ -65,7 +65,6 @@ export default function ProjectList() {
               >
                 <CardMedia
                   component="img"
-                  alt="green iguana"
                   image={item.cover}
                 />
                 <CardContent>
