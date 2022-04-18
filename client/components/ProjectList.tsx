@@ -40,6 +40,7 @@ export default function ProjectList() {
         {myProject.map((item, i) => {
           return (
             <Grid
+              key={i}
               item
               lg={6}
               md={6}
