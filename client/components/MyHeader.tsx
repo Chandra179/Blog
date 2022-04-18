@@ -26,7 +26,7 @@ export default function MyHeader() {
           width: 180,
           borderRadius: "50%",
         }}
-        src="luffy.jpg"
+        src="img/luffy.jpg"
       />
       <Box mt={1} display="flex" alignItems="center" flexDirection="column">
         <Typography letterSpacing={2} fontWeight={600} fontSize={28}>
