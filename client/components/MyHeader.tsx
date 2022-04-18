@@ -21,14 +21,13 @@ export default function MyHeader() {
       />
       <Box mt={1}>
         <Typography
-          letterSpacing={1}
+          letterSpacing={2}
           fontWeight={600}
           fontSize={28}
-          color="primary"
         >
           CHANDRA
         </Typography>
-        <Typography fontSize={12}>
+        <Typography fontSize={12} color="primary.light">
           Fresh graduate<span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
           Web Developer
           <span>&nbsp;&nbsp;</span> |<span>&nbsp;&nbsp;</span> INTJ

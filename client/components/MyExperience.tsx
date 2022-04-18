@@ -1,14 +1,12 @@
 import * as React from "react";
-import ListItem from "@mui/material/ListItem";
 import Divider from "@mui/material/Divider";
-import ListItemText from "@mui/material/ListItemText";
 import { Box, Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import myExperience from "../constant/myExperience.json";
 
 export default function MyExperience() {
   return (
-    <Box mt={5}>
+    <Box mt={4}>
       <Typography
         letterSpacing={1}
         fontSize={18}
@@ -17,34 +15,53 @@ export default function MyExperience() {
       >
         EXPERIENCE
       </Typography>
-      <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
-      <Box display="flex" flexDirection="row" >
+      <Divider sx={{ marginTop: 1 }} />
+      <Grid container display="flex" flexDirection="row">
         {myExperience.map((item, i) => {
           return (
-            <Box display="flex" flexDirection="column" textAlign="start" p={3}>
-              <Typography>
+            <Grid
+              item
+              lg={6}
+              md={6}
+              sm={12}
+              xs={12}
+              display="flex"
+              flexDirection="column"
+              textAlign="start"
+              key={i}
+              p={2}
+            >
+              <Typography fontWeight={600}>
                 {item.company} - {item.role}
               </Typography>
-              <Box mb={1}>
+              <Box mb={1.5}>
                 <Typography
                   component="span"
                   variant="body2"
-                  color="text.primary"
+                  color="primary.light"
                 >
                   {item.date}
                 </Typography>
               </Box>
-              {item.work.map(function (item, i) {
-                return (
-                  <Typography fontSize={14} key={i} sx={{ marginBottom: 0.7 }}>
-                    {item}
-                  </Typography>
-                );
-              })}
-            </Box>
+              <Box pl={1.5}>
+                {item.work.map(function (item, i) {
+                  return (
+                    <Typography
+                      color="text.secondary"
+                      fontSize={14}
+                      key={i}
+                      display="list-item"
+                      sx={{ marginBottom: 0.7 }}
+                    >
+                      {item}
+                    </Typography>
+                  );
+                })}
+              </Box>
+            </Grid>
           );
         })}
-      </Box>
+      </Grid>
     </Box>
   );
 }

@@ -13,7 +13,7 @@ export default function MySkills() {
       >
         SKILLS
       </Typography>
-      <Divider sx={{ marginTop: 1, marginBottom: 2 }} />
+      <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
       <Grid
         container
         display="flex"
@@ -24,7 +24,7 @@ export default function MySkills() {
           return (
             <Grid item lg={1} md={1} sm={1} xs={2} key={i}>
               <Box
-                m={1.5}
+                m={1}
                 component="img"
                 sx={{
                   height: 40,
