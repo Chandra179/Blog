@@ -29,9 +29,15 @@ export default function MyHeader() {
           CHANDRA
         </Typography>
         <Typography fontSize={12} color="primary.light">
-          Fresh graduate<span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
+          Fresh graduate
+          <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
           Web Developer
-          <span>&nbsp;&nbsp;</span> |<span>&nbsp;&nbsp;</span> INTJ
+          <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span> 
+          Computer science
+          <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span> 
+          Universitas Multimedia Nusantara
+          <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span> 
+          INTJ
         </Typography>
         <Box maxWidth={450}>
           <Typography mt={1} fontSize={15} color="text.secondary">

@@ -1,0 +1,10 @@
+[
+    {
+      "title": "Alexandria",
+      "cover": "alexa.png",
+      "desc": "Alexandria is Web apps for selling books. Made with Reactj, Django, Postgresql and Materail-UI",
+      "demo": "https://alexandria-bookcommerce.herokuapp.com",
+      "code": "https://github.com/Chandra179/Bookstore"
+    }
+  ]
+  

@@ -7,7 +7,7 @@ export default function MySkills() {
     <Box mt={5}>
       <Typography
         letterSpacing={1}
-        fontSize={19}
+        fontSize={18}
         fontWeight={800}
         color="primary"
       >
