@@ -8,88 +8,43 @@ import myExperience from "../constant/myExperience.json";
 
 export default function MyExperience() {
   return (
-    <Box mt={4}>
-      <Typography letterSpacing={1} fontSize={18} fontWeight={800}>
+    <Box mt={5}>
+      <Typography
+        letterSpacing={1}
+        fontSize={18}
+        fontWeight={800}
+        color="primary"
+      >
         EXPERIENCE
       </Typography>
       <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
-      <Grid
-        container
-        justifyContent="space-between"
-        display="flex"
-        flexDirection="row"
-      >
+      <Box display="flex" flexDirection="row" >
         {myExperience.map((item, i) => {
           return (
-            <Grid
-              item
-              lg={6}
-              md={6}
-              sm={12}
-              xs={12}
-              key={i}
-              sx={{
-                marginBottom: {
-                  lg: 0,
-                  md: 0,
-                  sm: 2,
-                  xs: 2,
-                },
-              }}
-            >
-              <ListItem alignItems="flex-start" sx={{ padding: 0 }}>
-                <ListItemText
-                  sx={{
-                    fontSize: {
-                      lg: 16,
-                      md: 16,
-                      sm: 14,
-                      xs: 12,
-                    },
-                    paddingRight: {
-                      lg: 2,
-                      md: 2,
-                      sm: 2,
-                      xs: 0,
-                    },
-                  }}
-                  primary={
-                    <Typography fontWeight={600}>
-                      {item.company} - {item.role}
-                    </Typography>
-                  }
-                  disableTypography={true}
-                  secondary={
-                    <Box>
-                      <Box mb={1}>
-                        <Typography
-                          sx={{ display: "inline" }}
-                          component="span"
-                          variant="body2"
-                          color="text.primary"
-                        >
-                          {item.date}
-                        </Typography>
-                      </Box>
-                      {item.work.map(function (item, i) {
-                        return (
-                          <Typography
-                            fontSize={14}
-                            key={i}
-                            sx={{ marginBottom: 0.7 }}
-                          >
-                            {item}
-                          </Typography>
-                        );
-                      })}
-                    </Box>
-                  }
-                />
-              </ListItem>
-            </Grid>
+            <Box display="flex" flexDirection="column" textAlign="start" p={3}>
+              <Typography>
+                {item.company} - {item.role}
+              </Typography>
+              <Box mb={1}>
+                <Typography
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+                  {item.date}
+                </Typography>
+              </Box>
+              {item.work.map(function (item, i) {
+                return (
+                  <Typography fontSize={14} key={i} sx={{ marginBottom: 0.7 }}>
+                    {item}
+                  </Typography>
+                );
+              })}
+            </Box>
           );
         })}
-      </Grid>
+      </Box>
     </Box>
   );
 }

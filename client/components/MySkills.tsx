@@ -5,16 +5,26 @@ import iconList from "../constant/iconList.json";
 export default function MySkills() {
   return (
     <Box mt={5}>
-      <Typography letterSpacing={1} fontSize={19} fontWeight={800}>
+      <Typography
+        letterSpacing={1}
+        fontSize={19}
+        fontWeight={800}
+        color="primary"
+      >
         SKILLS
       </Typography>
       <Divider sx={{ marginTop: 1, marginBottom: 2 }} />
-      <Grid container>
+      <Grid
+        container
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
         {iconList.map((item, i) => {
           return (
             <Grid item lg={1} md={1} sm={1} xs={2} key={i}>
               <Box
-                mr={3}
+                m={1.5}
                 component="img"
                 sx={{
                   height: 40,

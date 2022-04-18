@@ -20,7 +20,12 @@ export default function MyHeader() {
         src="luffy.jpg"
       />
       <Box mt={1}>
-        <Typography letterSpacing={1} fontWeight={600} fontSize={28} color="primary">
+        <Typography
+          letterSpacing={1}
+          fontWeight={600}
+          fontSize={28}
+          color="primary"
+        >
           CHANDRA
         </Typography>
         <Typography fontSize={12}>
