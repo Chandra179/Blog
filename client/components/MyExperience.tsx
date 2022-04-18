@@ -6,7 +6,7 @@ import myExperience from "../constant/myExperience.json";
 
 export default function MyExperience() {
   return (
-    <Box mt={4}>
+    <Box mt={5}>
       <Typography
         letterSpacing={1}
         fontSize={18}

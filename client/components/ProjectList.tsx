@@ -3,11 +3,16 @@ import { Box, Typography, Grid, Divider } from "@mui/material";
 
 export default function ProjectList() {
   return (
-    <Box mt={3}>
-      <Typography letterSpacing={1} fontSize={19} fontWeight={800}>
+    <Box mt={5}>
+      <Typography
+        letterSpacing={1}
+        fontSize={18}
+        fontWeight={800}
+        color="primary"
+      >
         PROJECT
       </Typography>
-      <Divider sx={{ marginTop: 1, marginBottom: 1 }} />
+      <Divider sx={{ marginTop: 1, marginBottom: 2 }} />
       <Grid
         container
         justifyContent="space-between"
@@ -29,21 +34,13 @@ export default function ProjectList() {
             },
           }}
         >
-          <Box display="flex" flexDirection="row" 
-              mt={2}>
-            <Box
-              boxShadow={1}
-              width={300}
-              height={250}
-              component="img"
-              src="luffy.jpg"
-            />
-            <Box display="flex" flexDirection="column">
-              <Box width={50} height={50} component="img" src="luffy.jpg" />
-              <Box width={50} height={50} component="img" src="luffy.jpg" />
-              <Box width={50} height={50} component="img" src="luffy.jpg" />
-            </Box>
-          </Box>
+          <Box
+            boxShadow={1}
+            width={300}
+            height={250}
+            component="img"
+            src="luffy.jpg"
+          />
         </Grid>
         <Grid
           item

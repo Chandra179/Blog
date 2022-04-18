@@ -9,6 +9,7 @@ export default function MyHeader() {
       alignItems="center"
       textAlign="center"
       flexDirection="column"
+      mb={1}
     >
       <Box
         component="img"
