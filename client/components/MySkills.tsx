@@ -4,7 +4,7 @@ import iconList from "../constant/iconList.json";
 
 export default function MySkills() {
   return (
-    <Box mt={4} display="flex" flexDirection="column">
+    <Box mt={5}>
       <Typography letterSpacing={1} fontSize={19} fontWeight={800}>
         SKILLS
       </Typography>

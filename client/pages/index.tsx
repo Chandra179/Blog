@@ -3,7 +3,7 @@ import { useState } from "react";
 import MyHeader from "../components/MyHeader";
 import Layout from "../components/Layout";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { CssBaseline, Container } from "@mui/material";
+import { CssBaseline, Box } from "@mui/material";
 import ThemeToggle from "../components/ThemeToggle";
 import MySkills from "../components/MySkills";
 import { dark, light } from "../constant/theme";
@@ -21,15 +21,15 @@ const Home: NextPage = () => {
   return (
     <ThemeProvider theme={isDarkTheme ? createTheme(dark) : createTheme(light)}>
       <CssBaseline />
-      <Container maxWidth="md" sx={{ boxShadow: 1 }}>
+      <Box p={3} sx={{ boxShadow: 1 }}>
         <ThemeToggle isDarkTheme={isDarkTheme} changeTheme={changeTheme} />
-        <MyHeader />
         <Layout>
+          <MyHeader />
           <MySkills />
           <MyExperience />
           <ProjectList />
         </Layout>
-      </Container>
+      </Box>
     </ThemeProvider>
   );
 };

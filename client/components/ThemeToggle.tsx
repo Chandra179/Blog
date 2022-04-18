@@ -11,7 +11,7 @@ type Props = {
 
 const ThemeToggle: React.FC<Props> = ({ isDarkTheme, changeTheme }) => {
   return (
-    <Box display="flex" justifyContent="flex-end" pt={1}>
+    <Box display="flex" justifyContent="flex-end">
       <IconButton onClick={changeTheme}>
         {isDarkTheme ? <Brightness7Icon /> : <Brightness4Icon />}
       </IconButton>
