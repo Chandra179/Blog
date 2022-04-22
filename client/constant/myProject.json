@@ -1,10 +1,15 @@
 [
-    {
-      "title": "Alexandria",
-      "cover": "img/alexa.png",
-      "desc": "Alexandria is Web apps for selling books. Made with Reactj, Django, Postgresql and Materail-UI",
-      "demo": "https://alexandria-bookcommerce.herokuapp.com",
-      "code": "https://github.com/Chandra179/Bookstore"
-    }
-  ]
-  
+  {
+    "title": "Alexandria",
+    "cover": "img/alexa.png",
+    "desc": "Alexandria is Web apps for selling books. Made with Reactj, Django, Postgresql and Materail-UI",
+    "demo": "https://alexandria-bookcommerce.herokuapp.com",
+    "code": "https://github.com/Chandra179/Bookstore"
+  },
+  {
+    "title": "CRUD tutorial",
+    "cover": "img/crud.png",
+    "desc": "Nodejs CRUD tutorial with Mongodb-atlas",
+    "code": "https://github.com/Chandra179/NodeMongoCrud"
+  }
+]

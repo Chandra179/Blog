@@ -11,13 +11,12 @@ import {
   Divider,
 } from "@mui/material";
 import myProject from "../constant/myProject.json";
-import Link from '@mui/material/Link';
 
 const actionBtn = {
-  fontSize: 14, 
-  textTransform: 'none',
-  height: 30
-}
+  fontSize: 14,
+  textTransform: "none",
+  height: 30,
+};
 
 export default function ProjectList() {
   return (
@@ -40,6 +39,9 @@ export default function ProjectList() {
         {myProject.map((item, i) => {
           return (
             <Grid
+              display="flex"
+              textAlign="start"
+              justifyContent="center"
               key={i}
               item
               lg={6}
@@ -56,17 +58,8 @@ export default function ProjectList() {
                 },
               }}
             >
-              <Card
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  textAlign: "start",
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  image={item.cover}
-                />
+              <Card>
+                <CardMedia  component="img" image={item.cover} />
                 <CardContent>
                   <Typography
                     fontWeight={600}
@@ -81,8 +74,16 @@ export default function ProjectList() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button href={item.demo} variant="contained" sx={actionBtn}>See Demo</Button>
-                  <Button href={item.code} sx={actionBtn}>See Code</Button>
+                  {item.demo ? (
+                    <Button href={item.demo} variant="contained" sx={actionBtn}>
+                      See Demo
+                    </Button>
+                  ) : (
+                    ""
+                  )}
+                  <Button href={item.code} sx={actionBtn}>
+                    See Code
+                  </Button>
                 </CardActions>
               </Card>
             </Grid>
