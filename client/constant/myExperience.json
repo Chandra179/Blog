@@ -1,17 +1,5 @@
 [
   {
-    "company": "Mplus software",
-    "role": "Software Developer",
-    "date": "Sep 2021 - Jan 2022",
-    "work": [
-      "(Allnex) Create multi-payment for customer invoice using Odoo",
-      "(Allnex) Create Odoo admin dashboard for (invoicing & shipment)",
-      "(SpicyBroccoli) Create python script to transfer Odoo website data",
-      "(CandyBarSydney) Create user interface for landing page with (html,css,js and jquery)",
-      "(Predige) Migrate Odoo version 12 to 14 for Localization modules"
-    ]
-  },
-  {
     "company": "Hoppas",
     "role": "Web Developer",
     "date": "Nov 2022 - Jan 2021",
