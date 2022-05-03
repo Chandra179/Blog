@@ -1,6 +1,5 @@
 [
     {"skill": "icon/js.png"},
-    {"skill": "icon/typescript.png"},
     {"skill": "icon/python.png"},
     {"skill": "icon/django.png"},
     {"skill": "icon/html.png"},
@@ -8,6 +7,5 @@
     {"skill": "icon/mui.png"},
     {"skill": "icon/postgresql.png"},
     {"skill": "icon/nodejs.png"},
-    {"skill": "icon/nextjs.png"},
     {"skill": "icon/react.png"}
 ]
