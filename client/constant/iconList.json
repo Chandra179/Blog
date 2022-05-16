@@ -1,11 +1,9 @@
 [
     {"skill": "icon/js.png"},
     {"skill": "icon/python.png"},
-    {"skill": "icon/django.png"},
     {"skill": "icon/html.png"},
     {"skill": "icon/css.png"},
     {"skill": "icon/mui.png"},
     {"skill": "icon/postgresql.png"},
-    {"skill": "icon/nodejs.png"},
     {"skill": "icon/react.png"}
 ]
