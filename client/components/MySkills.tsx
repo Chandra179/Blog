@@ -22,7 +22,7 @@ export default function MySkills() {
       >
         {iconList.map((item, i) => {
           return (
-            <Grid item lg={1} md={1} sm={1} xs={2} key={i}>
+            <Grid item lg={2} md={2} sm={2} xs={2} key={i}>
               <Box
                 m={1}
                 component="img"
