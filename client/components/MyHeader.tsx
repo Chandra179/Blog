@@ -34,11 +34,7 @@ export default function MyHeader() {
         </Typography>
         <Box display="flex" flexDirection="row">
           <Typography fontSize={12} color="primary.light">
-            Fresh graduate
-            <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
-            Web Developer
-            <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
-            Computer science
+            Computer science Student
             <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
             Universitas Multimedia Nusantara
             <span>&nbsp;&nbsp;</span> | <span>&nbsp;&nbsp;</span>
